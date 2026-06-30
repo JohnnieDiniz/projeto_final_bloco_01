@@ -24,7 +24,7 @@ public class Menu {
 			System.out.println("            3 - Buscar Produto por ID.               ");
 			System.out.println("            4 - Atualizar Produto.                   ");
 			System.out.println("            5 - Apagar Produto.                      ");
-			System.out.println("            7 - Sair                                 ");
+			System.out.println("            0 - Sair                                 ");
 			System.out.println("                                                     ");
 			System.out.println("*****************************************************");
 			System.out.println("Entre com a opção desejada:                          ");
@@ -81,6 +81,7 @@ public class Menu {
 
 	public static void sobre() {
 		System.out.println("\n*********************************************************");
+		System.out.println("Volte Sempre!  ");
 		System.out.println("Projeto Desenvolvido por:  ");
 		System.out.println("João Vitor Diniz Alves - joao.vitor.diniz@outlook.com");
 		System.out.println("github.com/JohnnieDiniz");
