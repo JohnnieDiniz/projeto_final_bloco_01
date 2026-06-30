@@ -12,6 +12,7 @@ public abstract class Produto {
 		this.nome = nome;
 		this.tipo = tipo;
 		this.preco = preco;
+				
 	}
 
 	public int getId() {

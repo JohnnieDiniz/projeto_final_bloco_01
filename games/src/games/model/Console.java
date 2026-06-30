@@ -1,14 +1,13 @@
 package games.model;
 
+
 public class Console extends Produto {
 	
 	private String videoGame;
 
 	public Console(int id, String nome, int tipo, float preco, String videoGame) {
 		super(id, nome, tipo, preco);
-		
-		this.videoGame = videoGame;
-		
+		this.videoGame = videoGame;		
 			}
 
 	public String getVideoGame() {

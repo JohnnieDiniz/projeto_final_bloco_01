@@ -14,7 +14,7 @@ public class Menu {
 	public static final ProdutoController produtoController = new ProdutoController();
 
 	public static void main(String[] args) {
-		
+
 		criarProdutosTeste();
 
 		int opcao;
@@ -101,12 +101,11 @@ public class Menu {
 		System.out.println("\n\nPressione Enter para continuar...");
 		leia.nextLine();
 	}
-	
+
 	private static void criarProdutosTeste() {
+		produtoController.cadastrar(new Console(produtoController.gerarId(), "Xbox Serie X", 1, 2500.00f, "Console"));
 		produtoController
-				.cadastrar(new Console(produtoController.gerarId(), "Xbox Serie X", 1, 2500.00f, "Console"));
-		produtoController
-				.cadastrar(new Periferico(produtoController.gerarId(), "Contorle - PS 5", 2, 350.00f, "Periferico"));
+				.cadastrar(new Periferico(produtoController.gerarId(), "Contorle - PS5", 2, 350.00f, "Periferico"));
 	}
 
 	private static void listarProdutos() {
@@ -129,18 +128,19 @@ public class Menu {
 			System.out.print("Digite a marca do Produto: ");
 			leia.skip("\\R");
 			String Console = leia.nextLine();
-			
+
 			produtoController.cadastrar(new Console(produtoController.gerarId(), nome, tipo, preco, Console));
 		}
 		case 2 -> {
 			System.out.print("Digite o tipo de Periférico: ");
 			leia.skip("\\R");
 			String Periferico = leia.nextLine();
-			
+
 			produtoController.cadastrar(new Periferico(produtoController.gerarId(), nome, tipo, preco, Periferico));
 		}
 		default -> System.out.println("tipo de produto inválido!");
 		}
+
 	}
 
 	private static void procurarProdutoPorId() {
@@ -191,7 +191,8 @@ public class Menu {
 			float preco = produto.getPreco();
 
 			System.out.printf(
-					"Nome atual: %s\nDigite o novo nome do Produto (Pressione ENTER para manter o valor atual): ", nome);
+					"Nome atual: %s\nDigite o novo nome do Produto (Pressione ENTER para manter o valor atual): ",
+					nome);
 			String entrada = leia.nextLine();
 			nome = entrada.isEmpty() ? nome : entrada;
 
@@ -203,9 +204,8 @@ public class Menu {
 			switch (tipo) {
 			case 1 -> {
 				String Console = ((Console) produto).getVideoGame();
-				
-				System.out.printf(
-						"Console atual é: %s\nDigite a marca: (Pressione ENTER para manter o valor atual): ",
+
+				System.out.printf("Console atual é: %s\nDigite a marca: (Pressione ENTER para manter o valor atual): ",
 						Console);
 				entrada = leia.nextLine();
 				Console = entrada.isEmpty() ? Console : entrada;
@@ -232,5 +232,3 @@ public class Menu {
 	}
 
 }
-
-
