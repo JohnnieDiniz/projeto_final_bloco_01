@@ -4,7 +4,7 @@ public class Periferico extends Produto {
 
 	private String periferico;
 
-	public Periferico(int id, String nome, int tipo, float preco, String perifericoo) {
+	public Periferico(int id, String nome, int tipo, float preco, String periferico) {
 		super(id, nome, tipo, preco);
 
 		this.periferico = periferico;

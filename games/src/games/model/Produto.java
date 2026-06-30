@@ -55,6 +55,14 @@ public abstract class Produto {
 		case 2 -> tipo = "Preiféricos";
 		default -> tipo = "Inválido";
 		}
+		
+		System.out.println("\n********************************************");
+		System.out.println("Dados do Produto");
+		System.out.println("********************************************");
+		System.out.printf("Id do produto: %d%n", this.id);
+		System.out.printf("Categoria do produto: %s%n", tipo);
+		System.out.printf("Nome do produto: %s%n", this.nome);
+		System.out.printf("Preço do produto: R$ %.2f%n", this.preco);
 
 	}
 }
