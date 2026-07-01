@@ -64,8 +64,6 @@ src
 │
 ├── menu
 │   └── Menu.java
-│
-└── util
 ```
 
 ------
@@ -145,7 +143,7 @@ git clone https://github.com/JohnnieDiniz/projeto_final_bloco_01.git
 
 ## ⭐ Considerações
 
-Este projeto representa minha evolução durante o Bootcamp Java Full Stack, consolidando conhecimentos em Java e Programação Orientada a Objetos.
+Este projeto representa minha evolução durante o primeiro bloco do Bootcamp Java Full Stack, consolidando conhecimentos em Java e Programação Orientada a Objetos.
 
 Cada classe, método e funcionalidade desenvolvida contribuíram para fortalecer minha lógica de programação, organização de código e entendimento da arquitetura de aplicações orientadas a objetos.
 
