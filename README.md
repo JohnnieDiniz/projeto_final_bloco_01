@@ -16,14 +16,13 @@ Mais do que entregar um sistema funcional, este projeto teve como objetivo coloc
 
 ## 🚀 Funcionalidades
 
-- ✅ Cadastrar produtos
-- 📋 Listar todos os produtos
-- 🔎 Buscar produto pelo ID
-- ✏️ Atualizar produtos cadastrados
-- 🗑️ Excluir produtos
-- 🔢 Geração automática de ID
-- ✔️ Confirmação antes da exclusão
-- 💻 Interface interativa via Console
+- ✅ Cadastrar produtos.
+- 📋 Listar todos os produtos.
+- 🔎 Buscar produto pelo ID.
+- ✏️ Atualizar produtos cadastrados.
+- 🗑️ Excluir produtos.
+- ✔️ Confirmação antes da exclusão.
+- 💻 Interface interativa via Console.
 
 ------
 
