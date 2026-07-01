@@ -4,6 +4,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import games.controller.ProdutoController;
+import games.controller.Validacao;
 import games.model.Console;
 import games.model.Periferico;
 import games.model.Produto;
@@ -113,9 +114,11 @@ public class Menu {
 	}
 
 	private static void cadastrarProduto() {
-
+		// try -- catch 
 		System.out.print("Digite o nome do produto: ");
 		String nome = leia.nextLine();
+		//Validacao.validarNome(nome);
+		
 
 		System.out.print("Digite o tipo do produto (1 - Console | 2 - Periférico): ");
 		int tipo = leia.nextInt();
